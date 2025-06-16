@@ -1,0 +1,35 @@
+# =============================================================================
+# Requirements.txt para Proyecto de Data Science
+# Generado con: pip freeze > requirements.txt
+# =============================================================================
+
+# ---- MANIPULACIÓN DE DATOS ----
+pandas==2.0.3
+numpy==1.24.3
+
+# ---- MACHINE LEARNING ----
+scikit-learn==1.3.0
+xgboost==1.7.6
+
+# ---- VISUALIZACIÓN ----
+matplotlib==3.7.2
+seaborn==0.12.2
+plotly==5.15.0
+
+# ---- ANÁLISIS Y NOTEBOOKS ----
+jupyter==1.0.0
+ipython==8.14.0
+
+# ---- WEB SCRAPING (si aplica) ----
+requests==2.31.0
+beautifulsoup4==4.12.2
+
+# ---- PROCESAMIENTO ----
+openpyxl==3.1.2
+python-dotenv==1.0.0
+
+# ---- UTILIDADES ----
+tqdm==4.65.0
+
+# ---- TESTING (opcional) ----
+pytest==7.4.0

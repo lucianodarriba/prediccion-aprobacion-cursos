@@ -1,0 +1,124 @@
+# =============================================================================
+# .gitignore para Proyectos de Data Science
+# =============================================================================
+
+# ---- ARCHIVOS PESADOS Y DATOS ----
+# CSVs grandes (más de 25MB GitHub no los acepta)
+*.csv
+data/raw/*.csv
+data/processed/*.csv
+
+# Modelos entrenados (pueden ser muy pesados)
+*.pkl
+*.joblib
+*.h5
+*.model
+models/
+
+# Datasets en otros formatos
+*.xlsx
+*.parquet
+*.feather
+
+# ---- INFORMACIÓN SENSIBLE ----
+# Variables de entorno con API keys
+.env
+.env.local
+.env.production
+
+# Archivos de configuración con credenciales
+config.ini
+secrets.json
+credentials.json
+
+# ---- PYTHON ----
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv/
+
+# ---- JUPYTER NOTEBOOKS ----
+# Checkpoints
+.ipynb_checkpoints
+
+# Archivos temporales de Jupyter
+*.ipynb_original
+
+# ---- SISTEMA OPERATIVO ----
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# ---- IDEs ----
+# VSCode
+.vscode/
+
+# PyCharm
+.idea/
+
+# Spyder
+.spyderproject
+.spyproject
+
+# ---- LOGS Y TEMPORALES ----
+*.log
+logs/
+temp/
+tmp/
+
+# ---- ESPECÍFICOS DE ML ----
+# TensorBoard
+runs/
+
+# MLflow
+mlruns/
+
+# Weights & Biases
+wandb/
+
+# ---- ARCHIVOS DE BACKUP ----
+*.bak
+*.backup
+*~
+
+# ---- ARCHIVOS MUY ESPECÍFICOS ----
+# Si usás Streamlit
+.streamlit/
+
+# Si usás Docker
+.dockerignore
